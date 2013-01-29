@@ -125,14 +125,6 @@ nav li a
 	    color: white;
 }
 
-/*nav a:hover,
-nav a:visited {
-    background: #8B0000;
-}
-
-nav a:hover {
-    text-decoration: none;
-}
 /* ==============
     MOBILE: Main
    ============== */
@@ -170,14 +162,76 @@ nav a:hover {
 	height:110px;
 }
 
+ol.bjqs-markers.h-centered a
+{
+	color:white;
+	background-color:#666666;
+	text-decoration:none;
+	margin-left:3px;
+	margin-top:5px;
+	border-radius:50px;
+	height:35px;
+	width:35px;
+	font-size:15px;
+	padding-top:10px;
+	font-weight: bold; 
+}
+p.bjqs-caption 
+{
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+}
 
+#boton_login
+{
+	    position:relative;
+          height:17px;
+	    width:101px;
+	    display: block;
+	    margin-bottom: 10px;
+	    margin-left:75%;
+	    padding: 11px 0;
+	    padding-top:0;	
+	    text-align: center;
+	    text-decoration: none;
+	    font-weight: bold;
+	    background-color:#666666;
+	    color:white;
+	    border-radius:0 0 50px 50px;	
+}
+.active {
+	background-position: right 12px;
+}
 
-
-
-
-
-
-
+.header-container
+{
+	position:relative;
+	margin-top:-10px;
+}
+#panel
+{
+	display:none;
+	position:absolute;
+	background-color:#666666;
+	margin-left:70%;
+	margin-right:10%;
+	margin-bottom:0;
+	padding-bottom:10px;
+}
+#lista_form li
+{
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+#lista_form
+{
+	list-style-type: none;
+}
+#formulario
+{
+	margin-right:30px;
+}
 
 
 
@@ -225,12 +279,12 @@ nav a:hover {
     	width:100%;
     	color: white;
     	padding: 20px 0;
-    	background: -moz-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+    	/*background: -moz-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
 	background: -o-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
 	background: -webkit-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
 	background: -ms-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
 	background: linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #666666), color-stop(100%, #555555));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #666666), color-stop(100%, #555555));*/
 	color:white;
 	padding-top:20px;
     }

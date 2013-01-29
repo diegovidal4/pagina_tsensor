@@ -38,8 +38,46 @@
 		$("#slideshow").bjqs({
 			"height":320,
 			"width":"100%",
-			"responsive":true
+			"responsive":true,
+			"usercaptions":true,
+			"showcontrols":false,
+			"animspeed":2500
 		});
+		$("ol.bjqs-markers.h-centered a").hover(
+		function() 
+			{
+				$(this).stop().animate({"backgroundColor": "#8B0000"}, "300");
+			},
+			function () 
+			{
+				$(this).stop().animate({"backgroundColor":"#666666"}, "800");
+			}
+		);
+		$("#boton_login").hover(
+		function() 
+			{
+				$(this).stop().animate({"backgroundColor": "#8B0000"}, "300");
+			},
+			function () 
+			{
+				$(this).stop().animate({"backgroundColor":"#666666"}, "800");
+			}
+		);
+		$("#boton_login").hover(
+		function() 
+			{
+				$(this).stop().animate({"backgroundColor": "#8B0000"}, "300");
+			},
+			function () 
+			{
+				$(this).stop().animate({"backgroundColor":"#666666"}, "800");
+			}
+		);
+		$("#boton_login").click(function() 
+			{
+				$("#panel").slideToggle("slow");
+				$(this).toggleClass("active");
+			});
 		
 	});
 	</script>
@@ -50,18 +88,35 @@
         <![endif]-->
 
         <div class="header-container">
+	    <div id="panel">
+		<form id="formulario" method="POST">
+			<ul id="lista_form">
+				<br/>
+				<li><label>Usuario</label></li>
+				<li><input type="text" ></li>
+				<br/>
+				<li><label>Password</label></li>
+				<li><input type="text"></li>
+				<br/>
+				<br/>
+			</ul>
+		</form>
+	    </div>
+	    <p id="slide">
+		<a id="boton_login" href="#">Login</a>
+	    </p>
             <header class="wrapper clearfix">
                 <div id="logo_header" align="center"><img src="img/logo_header.png"></div>
 	    	<nav>
             		<ul>                        
-				<li><a href="#">Home</a></li>
+					<li><a href="#">Home</a></li>
                         	<li><a href="#">Nuestra Misi&oacuten</a></li>
                         	<li><a href="#">Productos</a></li>
-				<li><a href="#">Servicio</a></li>
+					<li><a href="#">Servicio</a></li>
                         	<li><a href="#">Soluci&oacuten a Medida</a></li>
                         	<li><a href="#">Qui&eacutenes Somos</a></li>
-				<li><a href="#">Cont&aacutectenos</a></li>
-           		</ul>
+					<li><a href="#">Cont&aacutectenos</a></li>
+           			</ul>
 		</nav>
             </header>
         </div>
@@ -70,16 +125,16 @@
             <div class="main wrapper clearfix">
 		<div id="slideshow">
 			<ul class="bjqs">			
-				<li><img title="tsensor" src="img/slider/1.jpg" width="200" height="200" /></li>
-				<li><img src="img/slider/2.jpg" width="200" height="200" /></li>
-				<li><img src="img/slider/3.jpg"width="200" height="200" /></li>
-				<li><img src="img/slider/4.jpg"width="200" height="200" /></li>
+				<li><img title="Info" src="img/slider/1.jpg" width="200" height="200" /></li>
+				<li><img title="Info" src="img/slider/2.jpg" width="200" height="200" /></li>
+				<li><img title="Info" src="img/slider/3.jpg"width="200" height="200" /></li>
+				<li><img title="Info" src="img/slider/4.jpg"width="200" height="200" /></li>
 			</ul>
 		</div>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
             <footer class="wrapper">
-                <h3 align="right"><img src="img/logo.png" style="margin-right:20px"></h3>
+                <h3 align="right"><img src="img/logo.png" style="margin-right:20px; width"  ></h3>
             </footer>
       
 
