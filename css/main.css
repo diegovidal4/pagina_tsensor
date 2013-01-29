@@ -230,6 +230,7 @@ nav a:hover {
 	background: -webkit-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
 	background: -ms-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
 	background: linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #666666), color-stop(100%, #555555));
 	color:white;
 	padding-top:20px;
     }

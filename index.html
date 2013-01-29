@@ -25,14 +25,15 @@
 		$("#logo_header").hide();
 		$("#logo_header").fadeIn("slow");
 		$("nav li a").hover(
-		function() 
-		{
-			$(this).stop().animate({"backgroundColor": "#8B0000"}, "slow");
-		},
-		function () 
-		{
-        		$(this).stop().animate({"backgroundColor":"transparent"}, "slow");
-		});
+			function() 
+			{
+				$(this).stop().animate({"backgroundColor": "#8B0000"}, "800");
+			},
+			function () 
+			{
+				$(this).stop().animate({"backgroundColor":"transparent"}, "800");
+			}
+		);
 
 		$("#slideshow").bjqs({
 			"height":320,
