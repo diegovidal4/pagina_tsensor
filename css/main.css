@@ -69,6 +69,7 @@ body {
 {
 	clear:both;	
 	margin-left:5%;
+	margin-right:5%;
 	min-height:100%;
 	margin-bottom:160px;
 	
@@ -95,6 +96,10 @@ nav
 	height:40px;
 	margin-top:30px;
 	background: -moz-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: -o-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: -ms-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
 }
 nav ul {
 
@@ -104,22 +109,23 @@ nav ul {
 	list-style:none;
 }
 
-nav li a {
-    height:17px;
-    width:101px;
-    float:left;
-    display: block;
-    margin-bottom: 10px;
-    padding: 11px 0;
+nav li a 
+{
+	    height:17px;
+	    width:101px;
+	    float:left;
+	    display: block;
+	    margin-bottom: 10px;
+	    padding: 11px 0;
 
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right:80px;	
-    color: white;
+	    text-align: center;
+	    text-decoration: none;
+	    font-weight: bold;
+	    margin-right:80px;	
+	    color: white;
 }
 
-nav a:hover,
+/*nav a:hover,
 nav a:visited {
     background: #8B0000;
 }
@@ -127,7 +133,6 @@ nav a:visited {
 nav a:hover {
     text-decoration: none;
 }
-
 /* ==============
     MOBILE: Main
    ============== */
@@ -211,10 +216,9 @@ nav a:hover {
     }
     footer
     {
-	
 	-webkit-box-shadow: 0 -5px 10px #aaa;
-           -moz-box-shadow: 0 -5px 10px #aaa;
-                box-shadow: 0 -5px 10px #aaa;
+	-moz-box-shadow: 0 -5px 10px #aaa;
+	box-shadow: 0 -5px 10px #aaa;
 	position:fixed;
     	margin-top:10%;
     	height:100px;
@@ -222,6 +226,10 @@ nav a:hover {
     	color: white;
     	padding: 20px 0;
     	background: -moz-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: -o-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: -webkit-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: -ms-linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
+	background: linear-gradient(#666666, #555555) repeat scroll 0 0 transparent;
 	color:white;
 	padding-top:20px;
     }
