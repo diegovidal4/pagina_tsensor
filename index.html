@@ -24,17 +24,6 @@
 	{
 		$("#logo_header").hide();
 		$("#logo_header").fadeIn("slow");
-		$("nav li a").hover(
-			function() 
-			{
-				$(this).stop().animate({"backgroundColor": "#8B0000"}, "800");
-			},
-			function () 
-			{
-				$(this).stop().animate({"backgroundColor":"transparent"}, "800");
-			}
-		);
-
 		$("#slideshow").bjqs({
 			"height":320,
 			"width":"100%",
@@ -43,27 +32,7 @@
 			"showcontrols":false,
 			"animspeed":2500
 		});
-		$("ol.bjqs-markers.h-centered a").hover(
-		function() 
-			{
-				$(this).stop().animate({"backgroundColor": "#8B0000"}, "300");
-			},
-			function () 
-			{
-				$(this).stop().animate({"backgroundColor":"#666666"}, "800");
-			}
-		);
-		$("#boton_login").hover(
-		function() 
-			{
-				$(this).stop().animate({"backgroundColor": "#8B0000"}, "300");
-			},
-			function () 
-			{
-				$(this).stop().animate({"backgroundColor":"#666666"}, "800");
-			}
-		);
-		$("#boton_login").hover(
+		$("#boton_login,ol.bjqs-markers.h-centered a,nav li a").hover(
 		function() 
 			{
 				$(this).stop().animate({"backgroundColor": "#8B0000"}, "300");
@@ -77,15 +46,15 @@
 			{
 				if($("#identificador").is(":hidden"))
 				{
-					$("#panel").animate({
-						marginTop:"-205px"},500);
+					$("#panel_wrapper").animate({
+						marginTop:"-40px"},500);
 					$("#identificador").show();
 					
 				}
 				else
 				{
-					$("#panel").animate({
-						marginTop:"0px"
+					$("#panel_wrapper").animate({
+						marginTop:"170px"
 						},500);
 					$("#identificador").hide();
 				}
@@ -104,20 +73,20 @@
 			<div id="panel_wrapper">
 				<div id="identificador" style="display: block;"></div>
 				<div id="panel">
+					<br/>
 					<form id="formulario" method="POST">
 						<ul id="lista_form">
-							<br/>
 							<li><label>Usuario</label></li>
 							<li><input type="text" ></li>
 							<br/>
 							<li><label>Password</label></li>
 							<li><input type="text"></li>
-							<br/>
-							<br/>
 						</ul>
 					</form>
+					<br/>
+					<br/>
 			    	</div>
-				<div id="boton" align="right">
+				<div id="boton">
 					<a id="boton_login" href="#">Login</a>
 				</div>
 				
@@ -155,13 +124,6 @@
       
 
 
-        <script src="js/main.js"></script>
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+        <!--<script src="js/main.js"></script>-->
     </body>
 </html>
