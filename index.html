@@ -75,8 +75,20 @@
 		);
 		$("#boton_login").click(function() 
 			{
-				$("#panel").slideToggle("slow");
-				$(this).toggleClass("active");
+				if($("#identificador").is(":hidden"))
+				{
+					$("#panel").animate({
+						marginTop:"-205px"},500);
+					$("#identificador").show();
+					
+				}
+				else
+				{
+					$("#panel").animate({
+						marginTop:"0px"
+						},500);
+					$("#identificador").hide();
+				}
 			});
 		
 	});
@@ -88,28 +100,30 @@
         <![endif]-->
 
         <div class="header-container">
-		
             <header class="wrapper clearfix">
-		    <div id="panel">
-			<form id="formulario" method="POST">
-				<ul id="lista_form">
-					<br/>
-					<li><label>Usuario</label></li>
-					<li><input type="text" ></li>
-					<br/>
-					<li><label>Password</label></li>
-					<li><input type="text"></li>
-					<br/>
-					<br/>
-				</ul>
-			</form>
-		    </div>
-		
-	    	<p id="slide">
-			<div id="wrapper_button"><a id="boton_login" href="#">Login</a></div>
-	    	</p>
-                <div id="logo_header" align="right"><img src="img/logo_header.png"></div>
-	    	<nav>
+			<div id="panel_wrapper">
+				<div id="identificador" style="display: block;"></div>
+				<div id="panel">
+					<form id="formulario" method="POST">
+						<ul id="lista_form">
+							<br/>
+							<li><label>Usuario</label></li>
+							<li><input type="text" ></li>
+							<br/>
+							<li><label>Password</label></li>
+							<li><input type="text"></li>
+							<br/>
+							<br/>
+						</ul>
+					</form>
+			    	</div>
+				<div id="boton" align="right">
+					<a id="boton_login" href="#">Login</a>
+				</div>
+				
+			</div>
+                	<div id="logo_header" align="center"><img src="img/logo_header.png"></div>
+	    		<nav>
             		<ul>                        
 					<li><a href="#">Home</a></li>
                         	<li><a href="#">Nuestra Misi&oacuten</a></li>
@@ -119,7 +133,7 @@
                         	<li><a href="#">Qui&eacutenes Somos</a></li>
 					<li><a href="#">Cont&aacutectenos</a></li>
            			</ul>
-		</nav>
+			</nav>
             </header>
         </div>
 
