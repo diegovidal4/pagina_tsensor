@@ -63,7 +63,7 @@ body
 }
 .main-container
 {
-	padding-bottom:180px;
+	
 }
 	
 
@@ -138,13 +138,25 @@ nav li a
    Author's custom styles
    ========================================================================== */
 
-
+/* ==========================================================================
+   Estilo Main 
+   ========================================================================== */
+.main wrapper clearfix
+{
+	height:100%;
+	padding-bottom:300px;
+}
 
 
 
 /* ==========================================================================
    Estilo Slideshow 
    ========================================================================== */
+#slideshow
+{
+	margin-left:20px;
+	margin-right:20px;
+}
 ol.bjqs-markers.h-centered a
 {
 	color:white;
@@ -265,8 +277,8 @@ footer
 	-moz-box-shadow: 0 -5px 10px #aaa;
 	box-shadow: 0 -5px 10px #aaa;
 	position:relative;
-	height:180px;
-	margin-top:-80px;
+	height:-180px;
+	margin-top:300px;
 	clear:both;
     	width:100%;
     	color: black;
