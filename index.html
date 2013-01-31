@@ -32,7 +32,7 @@
 			"showcontrols":false,
 			"animspeed":2500
 		});
-		$("#boton_login,ol.bjqs-markers.h-centered a,nav li a").hover(
+		$("#boton_login,ol.bjqs-markers.h-centered a").hover(
 		function() 
 			{
 				$(this).stop().animate({"backgroundColor": "#8B0000"}, "300");
@@ -42,6 +42,16 @@
 				$(this).stop().animate({"backgroundColor":"#666666"}, "800");
 			}
 		);
+		$("nav li a").hover(
+		function() 
+			{
+				$(this).stop().animate({"backgroundColor": "#8B0000"}, "300");
+			},
+			function () 
+			{
+				$(this).stop().animate({"backgroundColor":"transparent"}, "800");
+			}
+		);		
 		$("#boton_login").click(function() 
 			{
 				if($("#identificador").is(":hidden"))
